@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91537DCA29BBB415002D1CFD /* BinaryCodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91537DC629BBB415002D1CFD /* BinaryCodableExtensions.swift */; };
+		91537DCB29BBB415002D1CFD /* BinaryCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91537DC729BBB415002D1CFD /* BinaryCodable.swift */; };
+		91537DCC29BBB415002D1CFD /* BinaryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91537DC829BBB415002D1CFD /* BinaryEncoder.swift */; };
+		91537DCD29BBB415002D1CFD /* BinaryDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91537DC929BBB415002D1CFD /* BinaryDecoder.swift */; };
 		91A5C8F329BAADA400C6F6FE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A5C8F229BAADA400C6F6FE /* main.swift */; };
+		91A5C8FA29BAADD500C6F6FE /* uszips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A5C8F929BAADD500C6F6FE /* uszips.swift */; };
+		91A5C8FC29BAADDC00C6F6FE /* worldcities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A5C8FB29BAADDC00C6F6FE /* worldcities.swift */; };
+		91A5C8FE29BAAE1000C6F6FE /* initialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A5C8FD29BAAE1000C6F6FE /* initialize.swift */; };
+		91A5C90129BAAE8200C6F6FE /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 91A5C90029BAAE8200C6F6FE /* SwiftCSV */; };
+		91A5C90329BAAEAD00C6F6FE /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A5C90229BAAEAD00C6F6FE /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +32,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		91537DC529BBB415002D1CFD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		91537DC629BBB415002D1CFD /* BinaryCodableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryCodableExtensions.swift; sourceTree = "<group>"; };
+		91537DC729BBB415002D1CFD /* BinaryCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryCodable.swift; sourceTree = "<group>"; };
+		91537DC829BBB415002D1CFD /* BinaryEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryEncoder.swift; sourceTree = "<group>"; };
+		91537DC929BBB415002D1CFD /* BinaryDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryDecoder.swift; sourceTree = "<group>"; };
 		91A5C8EF29BAADA400C6F6FE /* CityParser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CityParser; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A5C8F229BAADA400C6F6FE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		91A5C8F929BAADD500C6F6FE /* uszips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = uszips.swift; sourceTree = "<group>"; };
+		91A5C8FB29BAADDC00C6F6FE /* worldcities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = worldcities.swift; sourceTree = "<group>"; };
+		91A5C8FD29BAAE1000C6F6FE /* initialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = initialize.swift; sourceTree = "<group>"; };
+		91A5C90229BAAEAD00C6F6FE /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,12 +50,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A5C90129BAAE8200C6F6FE /* SwiftCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91537DC429BBB415002D1CFD /* BinaryCodable */ = {
+			isa = PBXGroup;
+			children = (
+				91537DC529BBB415002D1CFD /* LICENSE */,
+				91537DC629BBB415002D1CFD /* BinaryCodableExtensions.swift */,
+				91537DC729BBB415002D1CFD /* BinaryCodable.swift */,
+				91537DC829BBB415002D1CFD /* BinaryEncoder.swift */,
+				91537DC929BBB415002D1CFD /* BinaryDecoder.swift */,
+			);
+			path = BinaryCodable;
+			sourceTree = "<group>";
+		};
 		91A5C8E629BAADA400C6F6FE = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +89,11 @@
 			isa = PBXGroup;
 			children = (
 				91A5C8F229BAADA400C6F6FE /* main.swift */,
+				91A5C8F929BAADD500C6F6FE /* uszips.swift */,
+				91A5C8FB29BAADDC00C6F6FE /* worldcities.swift */,
+				91A5C8FD29BAAE1000C6F6FE /* initialize.swift */,
+				91A5C90229BAAEAD00C6F6FE /* City.swift */,
+				91537DC429BBB415002D1CFD /* BinaryCodable */,
 			);
 			path = CityParser;
 			sourceTree = "<group>";
@@ -78,6 +114,9 @@
 			dependencies = (
 			);
 			name = CityParser;
+			packageProductDependencies = (
+				91A5C90029BAAE8200C6F6FE /* SwiftCSV */,
+			);
 			productName = CityParser;
 			productReference = 91A5C8EF29BAADA400C6F6FE /* CityParser */;
 			productType = "com.apple.product-type.tool";
@@ -90,7 +129,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					91A5C8EE29BAADA400C6F6FE = {
 						CreatedOnToolsVersion = 14.1;
@@ -106,6 +145,9 @@
 				Base,
 			);
 			mainGroup = 91A5C8E629BAADA400C6F6FE;
+			packageReferences = (
+				91A5C8FF29BAAE8200C6F6FE /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+			);
 			productRefGroup = 91A5C8F029BAADA400C6F6FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -121,6 +163,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				91A5C8F329BAADA400C6F6FE /* main.swift in Sources */,
+				91537DCB29BBB415002D1CFD /* BinaryCodable.swift in Sources */,
+				91537DCA29BBB415002D1CFD /* BinaryCodableExtensions.swift in Sources */,
+				91537DCC29BBB415002D1CFD /* BinaryEncoder.swift in Sources */,
+				91537DCD29BBB415002D1CFD /* BinaryDecoder.swift in Sources */,
+				91A5C90329BAAEAD00C6F6FE /* City.swift in Sources */,
+				91A5C8FE29BAAE1000C6F6FE /* initialize.swift in Sources */,
+				91A5C8FA29BAADD500C6F6FE /* uszips.swift in Sources */,
+				91A5C8FC29BAADDC00C6F6FE /* worldcities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +210,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -220,6 +271,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -243,7 +295,10 @@
 		91A5C8F729BAADA400C6F6FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = FYX55SR9QC;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -254,7 +309,10 @@
 		91A5C8F829BAADA400C6F6FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = FYX55SR9QC;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -284,6 +342,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		91A5C8FF29BAAE8200C6F6FE /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91A5C90029BAAE8200C6F6FE /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91A5C8FF29BAAE8200C6F6FE /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 91A5C8E729BAADA400C6F6FE /* Project object */;
 }

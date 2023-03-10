@@ -5,7 +5,10 @@
 //  Created by Doug on 3/9/23.
 //
 
-import Foundation
+import os
 
-print("Hello, World!")
-
+do {
+    try await initialize(logger: Logger())
+} catch {
+    print(error)
+}
